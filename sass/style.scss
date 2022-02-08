@@ -1,85 +1,147 @@
-nav, .carousel-caption  {
-  font-family: 'Quicksand', sans-serif;
-}
-nav {
-  font-size: 18px;
-}
-.products {
-  .list-group {
-      font-family: 'Quicksand', sans-serif;
-  }
-
-h2, h5 {
-  font-family: 'Playfair Display', serif;
-}
-}
-.contact, .delivery p {
-  font-family: 'Quicksand', sans-serif;
-}
-.gallery, .delivery h3, .contact h3 {
-  font-family: 'Playfair Display', serif; 
-}
-.delivery h3 { 
-   font-weight: 700;
+.navAndSlider {
+  position: relative;
+  height: 698px;
+  max-width: 1920px;
 }
 
-.carousel-inner,
-.carousel-item {
-  height: 100vh;
-}
-.carousel-caption {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  right: auto;
-  bottom: auto;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.carousel-item img {
-  height: 100%;
-  object-fit: cover;
-}
-.card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-h5 {
-  text-align: center;
-  color: white;
-  font-size: 25px;
-}
-.products h5 {
-  color: black;
-  font-size: 20px;
-}
-.card-body {
-  text-align: center;
-}
-.contact {
-  background: #eff2f5;
-  .card {
-      background: #eff2f5;
-      border: none;
-  }
-  h3 {
-      text-align: left;
-  }
-}
-
-.contact .card ul {
+.carousel {
   display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: flex-start;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  // background: transparent url("/images/Path\ 749.svg") 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index: -2;
 }
-.contact .card ul li {
-  font-size: 0;
+
+.navbar {
+  position: absolute !important;
+  top: 64px;
+  left: 493px;
+  width: 1250px;
+  height: 40px;
+  // border: solid red;
+  .navbar-nav {
+    width: 65%;
+    // border: solid pink;
+    justify-content: space-between;
+  }
 }
-.contact .card i {
-  margin-right: 6px;
-  font-size: 20px;
-  line-height: 25px;
-  color: black;
+
+.divLogo {
+  display: flex;
+  justify-content: space-between;
+  // width: 100%;
+  img {
+    margin: 0 15px;
+  }
 }
+#nav-content {
+  justify-content: space-between;
+  .navbar-nav .nav-item a {
+    color: #fff;
+  }
+}
+
+.navbar-brand {
+  position: absolute;
+  top: 42px;
+  left: 175px;
+  width: 135px;
+  height: 67px;
+  // background: transparent url("/images/Logo.svg") 0% 0% no-repeat padding-box;
+  opacity: 1;
+  svg {
+    fill: #fff;
+    font-size: 48px;
+    font-family: Poppins-Bold, Poppins;
+    font-weight: 700;
+  }
+}
+// nav, .carousel-caption  {
+//   font-family: 'Quicksand', sans-serif;
+// }
+// nav {
+//   font-size: 18px;
+// }
+// .products {
+//   .list-group {
+//       font-family: 'Quicksand', sans-serif;
+//   }
+
+// h2, h5 {
+//   font-family: 'Playfair Display', serif;
+// }
+// }
+// .contact, .delivery p {
+//   font-family: 'Quicksand', sans-serif;
+// }
+// .gallery, .delivery h3, .contact h3 {
+//   font-family: 'Playfair Display', serif;
+// }
+// .delivery h3 {
+//    font-weight: 700;
+// }
+
+// .carousel-inner,
+// .carousel-item {
+//   height: 100vh;
+//   .carousel-caption {
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+//     right: auto;
+//     bottom: auto;
+//     padding-top: 0;
+//     padding-bottom: 0;
+//   }
+// }
+
+// .carousel-item img {
+//   height: 100%;
+//   object-fit: cover;
+// }
+// .card img {
+//   width: 100%;
+//   height: 300px;
+//   object-fit: cover;
+// }
+// h5 {
+//   text-align: center;
+//   color: white;
+//   font-size: 25px;
+// }
+// .products h5 {
+//   color: black;
+//   font-size: 20px;
+// }
+// .card-body {
+//   text-align: center;
+// }
+// .contact {
+//   background: #eff2f5;
+//   .card {
+//       background: #eff2f5;
+//       border: none;
+//   }
+//   h3 {
+//       text-align: left;
+//   }
+// }
+
+// .contact .card ul {
+//   display: flex;
+//   flex-direction: row;
+//   list-style: none;
+//   justify-content: flex-start;
+// }
+// .contact .card ul li {
+//   font-size: 0;
+// }
+// .contact .card i {
+//   margin-right: 6px;
+//   font-size: 20px;
+//   line-height: 25px;
+//   color: black;
+// }
