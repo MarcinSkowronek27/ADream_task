@@ -65,12 +65,17 @@
   display: inline-block;
   // padding: 1em 2em;
   position: absolute;
-  top: 823px;
+  // top: 823px;
+  bottom: 0px;
   left: 0px;
   width: 160px;
   height: 118px;
   text-align: center;
   color: white;
+  .secondArrow {
+    position: absolute;
+    transform: rotate(0deg);
+  }
   svg {
     width: 100%;
     height: 100%;
@@ -79,26 +84,6 @@
     transition: 0.5s ease-out;
     transform: rotate(180deg);
     fill: black;
-    // .a {
-    //   background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
-    // }
-    // .b {
-    //   clip-path: url(#a);
-    // }
-
-    // .c {
-    //   opacity: 0;
-    // }
-    // .d,
-    // .e {
-    //   fill: none;
-    //   // stroke: #000;
-    //   stroke-linecap: square;
-    //   stroke-width: 3px;
-    // }
-    // .d {
-    //   stroke-linejoin: round;
-    // }
   }
 }
 svg:hover {
