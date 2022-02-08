@@ -1,6 +1,6 @@
 .navAndSlider {
   position: relative;
-  height: 698px;
+  height: 941px; //should be 668;
   max-width: 1920px;
 }
 
@@ -27,6 +27,14 @@
     // border: solid pink;
     justify-content: space-between;
   }
+}
+
+.formBox {
+  position: absolute;
+  top: 178px;
+  left: 1295px;
+  width: 449px;
+  height: 638px;
 }
 
 .divLogo {
