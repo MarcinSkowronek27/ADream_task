@@ -41,6 +41,9 @@
   display: flex;
   justify-content: space-between;
   // width: 100%;
+  :nth-last-child(1n){
+    margin: 0 0 0 15px;
+  }
   img {
     margin: 0 15px;
   }
