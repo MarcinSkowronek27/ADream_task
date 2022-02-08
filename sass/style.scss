@@ -1,6 +1,6 @@
 .navAndSlider {
   position: relative;
-  height: 941px; //should be 668;
+  // height: 941px; //should be 668;
   max-width: 1920px;
 }
 
@@ -31,15 +31,18 @@
 
 .formBox {
   position: absolute;
-  top: 178px;
-  left: 1295px;
+  // top: 178px;
+  // left: 1295px;
+  right: 176px;
+  bottom: 125px;
   width: 449px;
   height: 638px;
 }
 
 .contentImage {
   position: absolute;
-  top: 517px;
+  // top: 517px;
+  bottom: 181px;
   left: 175px;
   svg {
     width: 196px;
@@ -54,7 +57,6 @@
     width: 887px;
     height: 139px;
     font-size: 48px;
-    padding: 2px;
     font-weight: 300;
     line-height: 1;
     text-align: left;
