@@ -148,12 +148,12 @@ svg .arrowRight {
   position: absolute;
   // top: 823px;
   bottom: 0px;
-  left: 0px;
+  // left: 0px; tu w razie czego ma być włączona opcja
   width: 160px;
   height: 118px;
   text-align: center;
   color: white;
-  .carousel-next-button .secondArrow {
+  .secondArrow {
     position: absolute;
     width: 160px;
     height: 118px;
@@ -216,9 +216,13 @@ svg .arrowRight {
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
-  .elem-one .arrowRight {
+
+  .elem-one .arrowBox {
+    right: 0px;
     position: absolute;
-    bottom: 0;
+    .secondArrow {
+      position: relative;
+    }
   }
 
   .elem-one .whiteBox {
