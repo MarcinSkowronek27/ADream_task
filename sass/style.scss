@@ -29,6 +29,45 @@
   }
 }
 
+.divLogo {
+  display: flex;
+  justify-content: space-between;
+  // width: 100%;
+  :nth-last-child(1n) {
+    margin: 0 0 0 15px;
+  }
+  img {
+    margin: 0 15px;
+    font-family: Poppins-Bold, Poppins;
+  }
+}
+#nav-content {
+  justify-content: space-between;
+  .navbar-nav .nav-item a {
+    color: #fff;
+  }
+}
+
+.navbar-brand {
+  position: absolute;
+  top: 42px;
+  left: 175px;
+  width: 135px;
+  height: 67px;
+  // background: transparent url("/images/Logo.svg") 0% 0% no-repeat padding-box;
+  opacity: 1;
+  svg {
+    fill: #fff;
+    font-size: 48px;
+    font-family: Poppins-Bold, Poppins;
+    font-weight: 700;
+  }
+}
+
+.carousel-control-prev {
+  z-index: 20;
+}
+
 .formBox {
   position: absolute;
   // top: 178px;
@@ -74,11 +113,14 @@
   height: 118px;
   text-align: center;
   color: white;
-  .secondArrow {
+  .carousel-next-button .secondArrow {
     position: absolute;
+    width: 160px;
+    height: 118px;
+    background-color: white;
     transform: rotate(0deg);
   }
-  svg {
+  .carousel-prev-button svg {
     width: 100%;
     height: 100%;
     background: linear-gradient(to left, white 50%, black 50%) right;
@@ -88,7 +130,7 @@
     fill: black;
   }
 }
-svg:hover {
+.carousel-prev-button svg:hover {
   background-position: left;
   fill: white;
   .a {
@@ -96,140 +138,7 @@ svg:hover {
   }
 }
 
-// .arrowBox {
-//   display: inline-block;
-//   z-index: 30;
-
-//   // width: 160px;
-//   height: 118px;
-//   background: red;
-//   background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
-//   background-size: 200%;
-//   transition: .5s ease-out;
-
-//   :hover {
-//     background-position: left;
-//     border: solid red;
-//   }
-// }
-
-.divLogo {
-  display: flex;
-  justify-content: space-between;
-  // width: 100%;
-  :nth-last-child(1n) {
-    margin: 0 0 0 15px;
-  }
-  img {
-    margin: 0 15px;
-    font-family: Poppins-Bold, Poppins;
-  }
+.carousel-next-button svg:hover {
+  background-position: right;
+  fill: white;
 }
-#nav-content {
-  justify-content: space-between;
-  .navbar-nav .nav-item a {
-    color: #fff;
-  }
-}
-
-.navbar-brand {
-  position: absolute;
-  top: 42px;
-  left: 175px;
-  width: 135px;
-  height: 67px;
-  // background: transparent url("/images/Logo.svg") 0% 0% no-repeat padding-box;
-  opacity: 1;
-  svg {
-    fill: #fff;
-    font-size: 48px;
-    font-family: Poppins-Bold, Poppins;
-    font-weight: 700;
-  }
-}
-// nav, .carousel-caption  {
-//   font-family: 'Quicksand', sans-serif;
-// }
-// nav {
-//   font-size: 18px;
-// }
-// .products {
-//   .list-group {
-//       font-family: 'Quicksand', sans-serif;
-//   }
-
-// h2, h5 {
-//   font-family: 'Playfair Display', serif;
-// }
-// }
-// .contact, .delivery p {
-//   font-family: 'Quicksand', sans-serif;
-// }
-// .gallery, .delivery h3, .contact h3 {
-//   font-family: 'Playfair Display', serif;
-// }
-// .delivery h3 {
-//    font-weight: 700;
-// }
-
-// .carousel-inner,
-// .carousel-item {
-//   height: 100vh;
-//   .carousel-caption {
-//     left: 50%;
-//     top: 50%;
-//     transform: translate(-50%, -50%);
-//     right: auto;
-//     bottom: auto;
-//     padding-top: 0;
-//     padding-bottom: 0;
-//   }
-// }
-
-// .carousel-item img {
-//   height: 100%;
-//   object-fit: cover;
-// }
-// .card img {
-//   width: 100%;
-//   height: 300px;
-//   object-fit: cover;
-// }
-// h5 {
-//   text-align: center;
-//   color: white;
-//   font-size: 25px;
-// }
-// .products h5 {
-//   color: black;
-//   font-size: 20px;
-// }
-// .card-body {
-//   text-align: center;
-// }
-// .contact {
-//   background: #eff2f5;
-//   .card {
-//       background: #eff2f5;
-//       border: none;
-//   }
-//   h3 {
-//       text-align: left;
-//   }
-// }
-
-// .contact .card ul {
-//   display: flex;
-//   flex-direction: row;
-//   list-style: none;
-//   justify-content: flex-start;
-// }
-// .contact .card ul li {
-//   font-size: 0;
-// }
-// .contact .card i {
-//   margin-right: 6px;
-//   font-size: 20px;
-//   line-height: 25px;
-//   color: black;
-// }
