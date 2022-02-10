@@ -15,12 +15,24 @@
   z-index: -2;
 }
 
+.navContainer {
+  display: flex;
+  position: absolute;
+  top: 42px;
+  left: 175px;
+  align-content: center;
+  height: 80px;
+  width: 82%;
+  justify-content: space-between;
+}
+
 .navbar {
-  position: absolute !important;
-  top: 64px;
-  left: 493px;
-  width: 1250px;
-  height: 40px;
+  // position: absolute !important;
+  // top: 64px;
+  // left: 493px;
+  width: 1400px;
+  // width: 1250px;
+  // height: 40px;
   // border: solid red;
   .navbar-nav {
     width: 65%;
@@ -48,12 +60,14 @@
   }
 }
 
-.navbar-brand {
-  position: absolute;
-  top: 42px;
-  left: 175px;
-  width: 135px;
-  height: 67px;
+.navContainer .navbar-brand {
+  height: 100%;
+  margin-right: 152px;
+  // position: absolute;
+  // top: 42px;
+  // left: 175px;
+  // width: 135px;
+  // height: 105px;
   // background: transparent url("/images/Logo.svg") 0% 0% no-repeat padding-box;
   opacity: 1;
   svg {
