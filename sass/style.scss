@@ -355,10 +355,90 @@ svg .arrowRight {
   border: solid red;
   margin-top: 141px;
   .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 1612px;
+    .toolBox {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 325px;
+      height: 359px;
+      // border: solid greenyellow;
+      .h3 {
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-28) /
+          var(--unnamed-line-spacing-38) var(--unnamed-font-family-poppins);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-000000);
+        text-align: left;
+        opacity: 1;
+      }
+    }
+  }
+  .toolBox .iconSvg {
+    width: 108px;
+    height: 129px;
+    opacity: 1;
+  }
+  .toolBox #iconOne {
+    background: transparent url("/images/Group\ 603.svg") 0% 0% no-repeat padding-box;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .toolBox #iconTwo {
+    background: transparent url("/images/Group\ 602.svg") 0% 0% no-repeat padding-box;
+    margin-top: 110px;
+    margin-bottom: 31px;
+    width: 120px;
+    height: 119px;
+    // border: solid green;
+  }
+  .toolBox #iconThree {
+    background: transparent url("/images/Group\ 601.svg") 0% 0% no-repeat padding-box;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    width: 130px;
+    height: 132px;
+  }
+  .toolBox #iconFour {
+    background: transparent url("/images/Group\ 604.svg") 0% 0% no-repeat padding-box;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  #toolFive {
+    height: 450px;
+    margin-right: 36px;
+    #iconFive {
+      background: transparent url("/images/Group\ 598.svg") 0% 0% no-repeat padding-box;
+      margin-top: 117px;
+      margin-bottom: 41px;
+      width: 136px;
+      height: 102px;
+    }
+  }
+  #toolSix {
+    height: 450px;
+    margin-right: 36px;
+    #iconSix {
+      background: transparent url("/images/Group\ 599.svg") 0% 0% no-repeat padding-box;
+      margin-top: 100px;
+      margin-bottom: 32px;
+      width: 136px;
+      height: 130px;
+    }
+  }
+  #toolSeven {
+    height: 450px;
+    #iconSeven {
+      background: transparent url("/images/Group\ 600.svg") 0% 0% no-repeat padding-box;
+      margin-top: 100px;
+      margin-bottom: 32px;
+      width: 136px;
+      height: 130px;
+    }
   }
   .iconTitleBox {
-    border: solid pink;
     width: 290px;
     height: 359px;
     .h2 {
