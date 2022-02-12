@@ -505,10 +505,12 @@ svg .arrowRight {
 .footer {
   height: 547px;
   background-color: var(--unnamed-color-000000);
+  position: relative;
   .container {
     position: relative;
     display: flex;
     max-width: 1612px;
+    flex-direction: column;
   }
   .logoBox {
     width: 250px;
@@ -523,6 +525,22 @@ svg .arrowRight {
       font-weight: 700;
     }
   }
+  .contactBox {
+    width: 200px;
+    // margin-top: 50px;
+    p {
+      font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/26px
+        var(--unnamed-font-family-poppins);
+      letter-spacing: var(--unnamed-character-spacing-0);
+      text-align: left;
+      letter-spacing: 0px;
+      color: #ffffff;
+    }
+    p:nth-last-child(1) {
+      font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 16px/26px
+        var(--unnamed-font-family-poppins);
+    }
+  }
 }
 
 .patternFooter {
@@ -532,6 +550,63 @@ svg .arrowRight {
   position: absolute;
   top: -29px;
   right: 175px;
+}
+
+.wrapperContact {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.navFooter {
+  margin-right: 400px;
+  ul {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px /
+      var(--unnamed-line-spacing-28) var(--unnamed-font-family-poppins);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    color: #ffffff;
+    opacity: 1;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 120px;
+    padding-left: 0;
+    width: 576px;
+    li {
+      letter-spacing: 0;
+      text-align: left;
+      color: #ffffff;
+      opacity: 1;
+      list-style: none;
+      width: 160px;
+      border: solid black;
+      justify-content: center;
+      margin-right: 100px;
+    }
+  }
+}
+
+.policy {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 12px / var(--unnamed-line-spacing-28)
+    var(--unnamed-font-family-poppins);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  color: #ffffff;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 120px;
+  p {
+    margin: 0;
+  }
+  img {
+    margin-bottom: 8px;
+  }
 }
 
 @media (min-width: 1400px) {
