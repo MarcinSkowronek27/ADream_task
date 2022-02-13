@@ -500,12 +500,12 @@ svg .arrowRight {
   }
 }
 
-/* Bog photo section */
+/* Big photo section */
 
 .bigPhotoBox {
   position: relative;
   height: 642px;
-  margin-top: 100px;
+  margin-top: 130px;
   // border: solid yellowgreen;
   .h1 {
     // position: absolute;
@@ -555,6 +555,74 @@ svg .arrowRight {
     width: 290px;
     height: 145px;
     top: -72px;
+  }
+}
+
+/* News section*/
+
+.newsBox {
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+  margin-top: 100px;
+  .containerTitle {
+    text-align: center;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-65) /
+      var(--unnamed-line-spacing-75) var(--unnamed-font-family-poppins);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+    opacity: 1;
+    margin-bottom: 100px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 1745px;
+  }
+  .wrapperCol {
+    width: 450px;
+    height: 100%;
+  }
+  .wrapperImage {
+    img {
+      height: 334px;
+      width: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+  .wrapperText {
+    p {
+      font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18) /
+        var(--unnamed-line-spacing-75) var(--unnamed-font-family-poppins);
+      letter-spacing: var(--unnamed-character-spacing-0);
+      color: var(--unnamed-color-000000);
+      text-align: left;
+      opacity: 1;
+    }
+    .h3 {
+      font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-28) /
+        var(--unnamed-line-spacing-38) var(--unnamed-font-family-poppins);
+      letter-spacing: var(--unnamed-character-spacing-0);
+      color: var(--unnamed-color-000000);
+      text-align: left;
+      opacity: 1;
+    }
+    .button {
+      font: var(--unnamed-font-style-normal) normal medium var(--unnamed-font-size-18) / var(--unnamed-line-spacing-28)
+        var(--unnamed-font-family-poppins);
+      letter-spacing: var(--unnamed-character-spacing-0);
+      color: var(--unnamed-color-000000);
+      text-align: left;
+      text-decoration: underline;
+      opacity: 1;
+      border: none;
+      background: none;
+      font-size: 18px;
+    }
   }
 }
 
