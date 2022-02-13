@@ -351,12 +351,12 @@ svg .arrowRight {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1612px;
+    max-width: 1745px;
     .toolBox {
       display: flex;
       flex-direction: column;
       position: relative;
-      width: 325px;
+      width: 360px; // tu było 325px
       height: 359px;
       // border: solid greenyellow;
       .h3 {
@@ -500,16 +500,73 @@ svg .arrowRight {
   }
 }
 
+/* Bog photo section */
+
+.bigPhotoBox {
+  position: relative;
+  height: 642px;
+  margin-top: 100px;
+  // border: solid yellowgreen;
+  .h1 {
+    // position: absolute;
+    margin-top: 200px;
+    top: 220px;
+    max-width: 540px;
+    left: 95px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-65) /
+      var(--unnamed-line-spacing-75) var(--unnamed-font-family-poppins);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+    text-align: left;
+    opacity: 1;
+    // border: solid;
+  }
+  .h1::after {
+    display: inline-block;
+    content: "";
+    border-top: 1.3rem solid black;
+    width: 39rem;
+    margin: 0 -0.19rem;
+    transform: translateY(7.5rem);
+  }
+  .container {
+    position: relative;
+    max-width: 1745px;
+    height: 100%;
+    // width: 100%;
+    // margin-right: 0;
+  }
+  .imageBox {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: url("/images/Group\ 258.png") no-repeat center;
+    height: 100%;
+    // width: 100%;
+    width: 1585px;
+    z-index: -1;
+  }
+  .patternPhoto {
+    position: absolute;
+    background: url("/images/Group\ 576.png") no-repeat center;
+    right: 175px;
+    width: 290px;
+    height: 145px;
+    top: -72px;
+  }
+}
+
 /*Footer section */
 
 .footer {
   height: 547px;
+  margin-top: 160px;
   background-color: var(--unnamed-color-000000);
   position: relative;
   .container {
     position: relative;
     display: flex;
-    max-width: 1612px;
+    max-width: 1745px;
     flex-direction: column;
   }
   .logoBox {
@@ -611,6 +668,6 @@ svg .arrowRight {
 
 @media (min-width: 1400px) {
   .servicesSection .services {
-    max-width: 1612px;
+    max-width: 1745px;
   }
 }
