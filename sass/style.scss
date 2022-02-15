@@ -798,16 +798,37 @@ svg .arrowRight {
   .formBox {
     width: 365px;
   }
+  .iconTools .toolBox {
+    align-items: center;
+    .h3 {
+      text-align: center;
+    }
+  }
+  .iconTools .container {
+    justify-content: center;
+  }
+  .iconTools #toolFive,
+  .iconTools #toolSix {
+    margin-right: 0;
+    .h3 {
+      text-align: center;
+    }
+  }
+  .iconTools .container .toolBox .h3 {
+    text-align: center;
+  }
 }
 @media (max-width: 1373px) {
+  .navFooter {
+    margin-right: 0;
+  }
+}
+@media (max-width: 923px) {
   .newsBox .container :nth-child(2n) {
     margin-top: 30px;
   }
   .newsBox .container :last-child {
     margin-top: 30px;
-  }
-  .navFooter {
-    margin-right: 0;
   }
 }
 
@@ -873,7 +894,7 @@ svg .arrowRight {
   }
 }
 
-@media (max-width: 360px){
+@media (max-width: 360px) {
   .bigPhotoBox .h1::after {
     width: 15rem;
   }
