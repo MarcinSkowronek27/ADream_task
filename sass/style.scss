@@ -828,11 +828,38 @@ svg .arrowRight {
   .navFooter ul {
     width: 244px;
   }
+  .bigPhotoBox .h1 {
+    font-size: 50px;
+  }
+  .bigPhotoBox .h1::after {
+    width: 29rem;
+  }
 }
 
-@media (max-width: 447px){
+@media (max-width: 447px) {
   .navFooter {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .newsBox .containerTitle {
+    font-size: 40px;
+    margin-bottom: 55px;
+  }
+  .bigPhotoBox {
+    // right: 57px;
+    .h1 {
+      font-size: 40px;
+      margin-left: 49px;
+      left: 0;
+    }
+    .patternPhoto {
+      right: 90px;
+    }
+  }
+  .bigPhotoBox .h1::after {
+    width: 19rem;
   }
 }
 
@@ -843,5 +870,11 @@ svg .arrowRight {
       width: 90%;
       height: 90%;
     }
+  }
+}
+
+@media (max-width: 360px){
+  .bigPhotoBox .h1::after {
+    width: 15rem;
   }
 }
