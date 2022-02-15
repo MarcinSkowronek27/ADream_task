@@ -2,6 +2,27 @@
   position: relative;
   // height: 941px; //should be 668;
   // max-width: 1920px;
+  .navbarBurger {
+    position: fixed;
+    background-color: none;
+    width: 55px;
+    z-index: 300;
+    padding: 0;
+    margin: 0;
+    top: 60px;
+    border-radius: 9px;
+    .container-fluid {
+      border-radius: 9px;
+      width: 42px;
+      margin: 0;
+      padding: 0;
+      .collapse {
+        position: absolute;
+        width: 140px;
+        top: 39px;
+      }
+    }
+  }
 }
 
 .carousel {
@@ -87,10 +108,14 @@
 }
 
 .contentImage {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   // top: 517px;
   bottom: 181px;
   left: 175px;
+  // max-width: 887px; to do zmiany
+  margin-right: 645px;
   svg {
     width: 196px;
     height: 91px;
@@ -101,7 +126,7 @@
   }
   .paragraph {
     color: white;
-    width: 887px;
+    // width: 887px;
     height: 139px;
     font-size: 48px;
     font-weight: 300;
@@ -109,7 +134,7 @@
     text-align: left;
   }
 }
-//test
+
 svg .arrowLeft {
   width: 100%;
   height: 100%;
@@ -180,11 +205,19 @@ svg .arrowRight {
   margin-top: 140px;
   display: flex;
   justify-content: center;
+  .services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .row {
+      justify-content: center;
+    }
+  }
   .elem-one,
   .elem-two {
     // border: solid;
     margin: 0 18px;
-    width: 770px;
+    max-width: 770px;
     height: 495px;
     position: relative;
     padding: 0;
@@ -193,7 +226,7 @@ svg .arrowRight {
   .elem-three,
   .elem-four {
     margin: 25px 18px 0;
-    width: 770px;
+    max-width: 770px;
     height: 362px;
     position: relative;
     padding: 0;
@@ -311,6 +344,10 @@ svg .arrowRight {
   .elem-two .whiteBox {
     top: 29px;
   }
+  .services .elem-two .whiteBox {
+    width: 241px;
+    height: 195px;
+  }
   .services .elem-three .whiteBox {
     width: 223px;
     height: 195px;
@@ -327,20 +364,6 @@ svg .arrowRight {
     .h3 {
       width: 270px;
     }
-  }
-  // nie zmieniam rozmiaru boxa dla services
-  // .services #smallArrowBox{
-  //   width: 130px;
-  //   height: 130px;
-  //   .secondArrow {
-  //     width: 130px;
-  //     height: 130px;
-  //   }
-  // }
-
-  .services .elem-two .whiteBox {
-    width: 241px;
-    height: 195px;
   }
 }
 
@@ -628,7 +651,7 @@ svg .arrowRight {
 /*Footer section */
 
 .footer {
-  height: 547px;
+  // height: 547px; test
   margin-top: 160px;
   background-color: var(--unnamed-color-000000);
   position: relative;
@@ -652,7 +675,7 @@ svg .arrowRight {
     }
   }
   .contactBox {
-    width: 200px;
+    width: 180px;
     // margin-top: 50px;
     p {
       font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/26px
@@ -683,6 +706,7 @@ svg .arrowRight {
   margin-top: 50px;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .navFooter {
   margin-right: 400px;
@@ -727,6 +751,7 @@ svg .arrowRight {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 120px;
+  margin-bottom: 30px;
   p {
     margin: 0;
   }
@@ -735,8 +760,88 @@ svg .arrowRight {
   }
 }
 
+/*MEDIA QUERIES*/
+
 @media (min-width: 1400px) {
+  .navAndSlider .navbarBurger {
+    display: none;
+  }
   .servicesSection .services {
     max-width: 1745px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contentImage {
+    svg {
+      font-size: 48px;
+    }
+    .paragraph {
+      font-size: 36px;
+    }
+  }
+  .formBox {
+    width: 364px;
+  }
+  .navContainer .navbar-nav {
+    visibility: hidden;
+  }
+  .navContainer {
+    width: 78%;
+  }
+}
+
+@media (max-width: 1610px) {
+  .servicesSection .services .elem-two {
+    margin-top: 27px;
+  }
+  .formBox {
+    width: 365px;
+  }
+}
+@media (max-width: 1373px) {
+  .newsBox .container :nth-child(2n) {
+    margin-top: 30px;
+  }
+  .newsBox .container :last-child {
+    margin-top: 30px;
+  }
+  .navFooter {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1025px) {
+  .navContainer {
+    left: 104px;
+  }
+  .navbar-brand {
+    margin-right: 46px;
+  }
+  .contentImage {
+    bottom: 90px;
+    left: 100px;
+  }
+}
+
+@media (max-width: 778px) {
+  .navFooter ul {
+    width: 244px;
+  }
+}
+
+@media (max-width: 447px){
+  .navFooter {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1785px) {
+  .formBox {
+    bottom: -35px;
+    img {
+      width: 90%;
+      height: 90%;
+    }
   }
 }
