@@ -209,6 +209,7 @@ svg .arrowRight {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     .row {
       justify-content: center;
     }
@@ -216,6 +217,7 @@ svg .arrowRight {
   .elem-one,
   .elem-two {
     // border: solid;
+    // min-width: 341px;
     margin: 0 18px;
     max-width: 770px;
     height: 495px;
@@ -230,13 +232,15 @@ svg .arrowRight {
     height: 362px;
     position: relative;
     padding: 0;
+    // min-width: 341px;
     figure {
       height: 362px;
     }
   }
   figure {
     width: 770px;
-    height: 495px;
+    // height: 495px;
+    height: 100%;
     margin: 0;
     padding: 0;
     background: #fff;
@@ -373,7 +377,8 @@ svg .arrowRight {
   .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 1745px;
     .toolBox {
       display: flex;
@@ -791,10 +796,47 @@ svg .arrowRight {
   }
 }
 
-@media (max-width: 1610px) {
+@media (max-width: 1635px) {
+  .services .elem-one,
+  .services .elem-two,
+  .services .elem-three,
+  .services .elem-four {
+    // width: 750px;
+    min-width: 340px;
+    figure {
+      // width: 750px;
+      min-width: 340px;
+    }
+  }
+}
+@media (max-width: 1585px) {
+  .services .elem-one,
+  .services .elem-two,
+  .services .elem-three,
+  .services .elem-four {
+    // width: 743px;
+    min-width: 500px;
+    max-width: 0;
+    width: 0;
+  }
+  .services .elem-one figure,
+  .services .elem-two figure,
+  .services .elem-three figure,
+  .services .elem-four figure {
+    // width: 743px;
+    min-width: 500px;
+    width: 0;
+  }
+}
+@media (max-width: 1199px) {
   .servicesSection .services .elem-two {
     margin-top: 27px;
   }
+}
+// @media (max-width: 1400px){
+
+// }
+@media (max-width: 1610px) {
   .formBox {
     width: 365px;
   }
@@ -855,6 +897,18 @@ svg .arrowRight {
   .bigPhotoBox .h1::after {
     width: 29rem;
   }
+  .servicesSection .services .elem-three .whiteBox {
+    width: 154px;
+    bottom: 144px;
+  }
+  .servicesSection .services .elem-four .whiteBox {
+    width: 172px;
+    bottom: 149px;
+    .h3 {
+      font-size: 20px;
+      width: 131px;
+    }
+  }
 }
 
 @media (max-width: 447px) {
@@ -881,6 +935,23 @@ svg .arrowRight {
   }
   .bigPhotoBox .h1::after {
     width: 19rem;
+  }
+  .services .elem-one,
+  .services .elem-two,
+  .services .elem-three,
+  .services .elem-four {
+    // width: 743px;
+    min-width: 350px;
+    max-width: 0;
+    width: 0;
+  }
+  .services .elem-one figure,
+  .services .elem-two figure,
+  .services .elem-three figure,
+  .services .elem-four figure {
+    // width: 743px;
+    min-width: 350px;
+    width: 0;
   }
 }
 
