@@ -189,6 +189,10 @@ svg .arrowRight {
     fill: black;
   }
 }
+.arrowCarousel #useArrowTwo,
+.arrowCarousel #useArrowThree {
+  display: none;
+}
 
 .carousel-prev-button svg:hover,
 .carousel-next-button svg:hover {
@@ -653,6 +657,38 @@ svg .arrowRight {
   }
 }
 
+/*Gallery section*/
+.gallery {
+  margin-top: 130px;
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  #imageOne,
+  #imageFour {
+    height: 100%;
+  }
+  #imageTwo {
+    height: 50%;
+  }
+  #imageThree {
+    height: 48.5%;
+    margin-top: 17px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 /*Footer section */
 
 .footer {
@@ -764,6 +800,34 @@ svg .arrowRight {
     margin-bottom: 8px;
   }
 }
+.navContainer .btn {
+  display: none;
+}
+.modal-body .formBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.navContainer .btn-check:focus,
+.navContainer .btn-primary:focus {
+  color: #fff;
+  background-color: var(--unnamed-color-000000) !important;
+  border-color: var(--unnamed-color-000000) !important;
+  box-shadow: 0 0 0 0.25rem rgba(241, 241, 241, 0.5) !important;
+}
+
+.navContainer .btn-primary:hover {
+  color: #fff;
+  background-color: var(--unnamed-color-000000);
+  border-color: var(--unnamed-color-000000);
+}
 
 /*MEDIA QUERIES*/
 
@@ -789,9 +853,9 @@ svg .arrowRight {
     width: 364px;
   }
   .navContainer {
-    // .navbar {
-    //   width: 0;
-    // }
+    .navbar {
+      width: 100px;
+    }
     .navbar .divLogo {
       margin-left: 0;
     }
@@ -883,6 +947,20 @@ svg .arrowRight {
     bottom: 88px;
     margin-right: 100px;
   }
+  .navAndSlider .formBox {
+    display: none;
+  }
+  .navContainer .btn {
+    display: block;
+    color: var(--unnamed-color-000000);
+    background-color: var(--unnamed-color-FFCC48);
+    border-color: var(--unnamed-color-FFCC48);
+    position: absolute;
+    margin-top: 124px;
+    right: 0px;
+    height: 80%;
+    width: 144px;
+  }
 }
 @media (max-width: 923px) {
   .newsBox .container :nth-child(2n) {
@@ -890,6 +968,28 @@ svg .arrowRight {
   }
   .newsBox .container :last-child {
     margin-top: 30px;
+  }
+  .contentImage svg {
+    font-size: 30px;
+  }
+  .contentImage .paragraph {
+    height: 89px;
+    // border: solid red;
+  }
+  .navAndSlider .contentImage .paragraph {
+    font-size: 26px;
+  }
+  .arrowCarousel,
+  .arrowBox .arrowCarousel {
+    width: 93px;
+    height: 85px;
+  }
+
+  .arrowCarousel #useArrowOne {
+    display: none;
+  }
+  .arrowCarousel #useArrowTwo {
+    display: block;
   }
 }
 
@@ -987,8 +1087,79 @@ svg .arrowRight {
   }
 }
 
+@media (max-width: 630px) {
+  .navContainer .btn {
+    width: 75px;
+    font-size: 10px;
+    padding: 0;
+    margin-right: 30px;
+    margin-top: 210px;
+  }
+  .navAndSlider .contentImage {
+    bottom: 32px;
+    .paragraph {
+      font-size: 18px;
+    }
+  }
+}
+
 @media (max-width: 360px) {
   .bigPhotoBox .h1::after {
     width: 15rem;
+  }
+}
+@media (max-width: 580px) {
+  .collapse .divLogo {
+    display: block;
+  }
+  .navAndSlider .navContainer .btn {
+    margin-top: 76px;
+  }
+  .navContainer .navbar {
+    margin-right: 30px;
+  }
+  .navContainer .navbar-brand {
+    margin-right: 10px;
+  }
+  .arrowCarousel,
+  .arrowBox .arrowCarousel {
+    width: 53px;
+    height: 55px;
+  }
+  .arrowCarousel #useArrowThree {
+    display: block;
+  }
+  .arrowCarousel #useArrowTwo {
+    display: none;
+  }
+  .contentImage {
+    margin-right: 150px;
+    bottom: 0px;
+  }
+  .contentImage .paragraph {
+    height: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navContainer {
+    top: 0px;
+    .btn {
+      margin-top: 236px;
+    }
+  }
+  .contentImage {
+    left: 104px;
+    bottom: 106px;
+  }
+}
+
+@media (max-width: 680px) {
+  .contentImage {
+    bottom: 70px;
+    margin-right: 30px;
+  }
+  .navContainer .btn {
+    margin-top: 90px;
   }
 }
