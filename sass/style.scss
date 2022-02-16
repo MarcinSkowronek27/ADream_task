@@ -788,8 +788,18 @@ svg .arrowRight {
   .formBox {
     width: 364px;
   }
-  .navContainer .navbar-nav {
-    visibility: hidden;
+  .navContainer {
+    // .navbar {
+    //   width: 0;
+    // }
+    .navbar .divLogo {
+      margin-left: 0;
+    }
+    .navbar-nav {
+      // visibility: hidden;
+      display: none;
+      width: 120px;
+    }
   }
   .navContainer {
     width: 78%;
@@ -802,13 +812,18 @@ svg .arrowRight {
   .services .elem-three,
   .services .elem-four {
     // width: 750px;
-    min-width: 340px;
+    min-width: 633px;
+    max-width: 0;
+    width: 0;
     figure {
       // width: 750px;
       min-width: 340px;
+      width: 633px;
+      // max-width: 700px;
     }
   }
 }
+
 @media (max-width: 1585px) {
   .services .elem-one,
   .services .elem-two,
@@ -864,6 +879,10 @@ svg .arrowRight {
   .navFooter {
     margin-right: 0;
   }
+  .contentImage {
+    bottom: 88px;
+    margin-right: 100px;
+  }
 }
 @media (max-width: 923px) {
   .newsBox .container :nth-child(2n) {
@@ -908,6 +927,9 @@ svg .arrowRight {
       font-size: 20px;
       width: 131px;
     }
+  }
+  .navContainer .navbar-brand {
+    margin-right: 59px;
   }
 }
 
