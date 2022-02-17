@@ -661,15 +661,44 @@ svg .arrowRight {
 .gallery {
   position: relative;
   margin-top: 130px;
+  width: 100%;
+  .arrowBox {
+    display: inline-block;
+    // padding: 1em 2em;
+    position: absolute;
+    // top: 823px;
+    bottom: 0px;
+    // left: 0px; tu w razie czego ma być włączona opcja
+    width: 145px;
+    height: 118px;
+    text-align: center;
+    color: white;
+    .secondArrow {
+      position: absolute;
+      width: 145px;
+      height: 118px;
+      background-color: white;
+      transform: rotate(0deg);
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to left, white 50%, black 50%) right;
+      background-size: 200%;
+      transition: 0.5s ease-out;
+      transform: rotate(180deg);
+      fill: black;
+    }
+  }
+  .row {
+    width: 100%;
+  }
   .container {
     display: flex;
     position: absolute;
     top: 30px;
     right: 209px;
     justify-content: flex-end;
-    .row {
-      width: 100%;
-    }
     .h1 {
       font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-65) /
         var(--unnamed-line-spacing-75) var(--unnamed-font-family-poppins);
@@ -916,25 +945,30 @@ svg .arrowRight {
   }
 }
 
-@media (max-width: 1585px) {
-  .services .elem-one,
-  .services .elem-two,
-  .services .elem-three,
-  .services .elem-four {
-    // width: 743px;
-    min-width: 750px;
-    max-width: 0;
-    width: 0;
-  }
-  .services .elem-one figure,
-  .services .elem-two figure,
-  .services .elem-three figure,
-  .services .elem-four figure {
-    // width: 743px;
-    min-width: 750px;
-    width: 0;
-  }
-}
+// @media (max-width: 1585px) {
+//   .services .elem-one,
+//   .services .elem-two,
+//   .services .elem-three,
+//   .services .elem-four {
+//     // width: 743px;
+//     min-width: 700px;
+//     max-width: 0;
+//     width: 0;
+//   }
+//   .services .elem-one figure,
+//   .services .elem-two figure,
+//   .services .elem-three figure,
+//   .services .elem-four figure {
+//     // width: 743px;
+//     min-width: 700px;
+//     width: 0;
+//   }
+// }
+// @media (max-width: 1521px) {
+//   .servicesSection .services .elem-two {
+//     margin-top: 27px;
+//   }
+// }
 @media (max-width: 1199px) {
   .servicesSection .services .elem-two {
     margin-top: 27px;
@@ -1067,6 +1101,69 @@ svg .arrowRight {
   }
 }
 
+@media (max-width: 1785px) {
+  .formBox {
+    bottom: -35px;
+    img {
+      width: 90%;
+      height: 90%;
+    }
+  }
+}
+// @media (max-width: 1521px) {
+//   .services .elem-one,
+//   .services .elem-two,
+//   .services .elem-three,
+//   .services .elem-four {
+//     // width: 743px;
+//     min-width: 750px;
+//   }
+//   .services .elem-one figure,
+//   .services .elem-two figure,
+//   .services .elem-three figure,
+//   .services .elem-four figure {
+//     // width: 743px;
+//     min-width: 750px;
+//   }
+// }
+
+@media (max-width: 630px) {
+  .navContainer .btn {
+    width: 75px;
+    font-size: 10px;
+    padding: 0;
+    margin-right: 30px;
+    margin-top: 210px;
+  }
+  .navAndSlider .contentImage {
+    bottom: 32px;
+    .paragraph {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .services .elem-one,
+  .services .elem-two,
+  .services .elem-three,
+  .services .elem-four {
+    // width: 743px;
+    min-width: 600px;
+  }
+  .services .elem-one figure,
+  .services .elem-two figure,
+  .services .elem-three figure,
+  .services .elem-four figure {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .bigPhotoBox .h1::after {
+    width: 15rem;
+  }
+}
+
 @media (max-width: 500px) {
   .newsBox .containerTitle {
     font-size: 40px;
@@ -1105,53 +1202,6 @@ svg .arrowRight {
   }
 }
 
-@media (max-width: 1785px) {
-  .formBox {
-    bottom: -35px;
-    img {
-      width: 90%;
-      height: 90%;
-    }
-  }
-}
-@media (max-width: 1521px) {
-  .services .elem-one,
-  .services .elem-two,
-  .services .elem-three,
-  .services .elem-four {
-    // width: 743px;
-    min-width: 750px;
-  }
-  .services .elem-one figure,
-  .services .elem-two figure,
-  .services .elem-three figure,
-  .services .elem-four figure {
-    // width: 743px;
-    min-width: 750px;
-  }
-}
-
-@media (max-width: 630px) {
-  .navContainer .btn {
-    width: 75px;
-    font-size: 10px;
-    padding: 0;
-    margin-right: 30px;
-    margin-top: 210px;
-  }
-  .navAndSlider .contentImage {
-    bottom: 32px;
-    .paragraph {
-      font-size: 18px;
-    }
-  }
-}
-
-@media (max-width: 360px) {
-  .bigPhotoBox .h1::after {
-    width: 15rem;
-  }
-}
 @media (max-width: 580px) {
   .collapse .divLogo {
     display: block;
