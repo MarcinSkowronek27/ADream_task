@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ADreams site</title>
-  <link rel="stylesheet" href="global.css" type="text/css">
+  <link rel="stylesheet" href="/css/global.css" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -94,7 +94,7 @@
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <img class="d-block w-100"
-            src="/images/shutterstock_615439679.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="First slide">
+            src="https://i.postimg.cc/8zsQPnxd/shutterstock-615439679.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="First slide">
         </div>
         <div class="carousel-item">
           <img class="d-block w-100"
@@ -107,7 +107,8 @@
       </div>
     </div>
     <div class="contentImage">
-      <h1 class='h1'><svg xmlns="http://www.w3.org/2000/svg" width="196" height="91" viewBox="0 0 196 91" focusable="true">
+      <h1 class='h1'><svg xmlns="http://www.w3.org/2000/svg" width="196" height="91" viewBox="0 0 196 91"
+          focusable="true">
           <text class="a" transform="translate(0 68)">
             <tspan x="0" y="0">Firma</tspan>
           </text>
@@ -146,7 +147,7 @@
           <path d="M-2,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
         </symbol>
       </svg>
-      <svg display="none" focusable="true"> 
+      <svg display="none" focusable="true">
         <symbol width="120" height="176" viewBox="0 -6.8 60 120" id="arrowThree" ;>
           <path d="M-2,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
         </symbol>
@@ -217,6 +218,8 @@
         <div class="arrowBox">
           <svg class="secondArrow" focusable="true">
             <use xlink:href="#arrow" />
+            <use id="useArrowTwo" xlink:href="#arrowTwo" />
+            <use id="useArrowThree" xlink:href="#arrowThree" />
           </svg>
         </div>
       </div>
@@ -317,9 +320,9 @@
     </div>
   </section>
   <section class="gallery">
-    <div class="arrowBox arrowCarousel">
-      <svg class="secondArrow" focusable="true">
-        <use xlink:href="#arrowOne" />
+    <div class="arrowBox">
+      <svg class="arrowLeft" focusable="true">
+        <use xlink:href="#arrow" />
       </svg>
     </div>
     <div class="container">

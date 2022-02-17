@@ -49,7 +49,7 @@
   .navbar-nav {
     width: 65%;
     justify-content: space-between;
-    .nav-item a{
+    .nav-item a {
       position: relative;
       &::after {
         content: "";
@@ -639,29 +639,31 @@ svg .arrowRight {
   margin-top: 130px;
   width: 100%;
   .arrowBox {
-    display: inline-block;
-    position: absolute;
-    bottom: 0px;
-    width: 145px;
-    height: 118px;
-    text-align: center;
-    color: white;
-    .secondArrow {
-      position: absolute;
-      width: 145px;
-      height: 118px;
-      background-color: white;
-      transform: rotate(0deg);
-    }
-    svg {
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to left, white 50%, black 50%) right;
-      background-size: 200%;
-      transition: 0.5s ease-out;
-      transform: rotate(180deg);
-      fill: black;
-    }
+      bottom: 0;
+      top: 42%;
+      svg:hover {
+        background-position: left;
+        fill: white;
+        .a {
+          fill: white;
+        }
+      }
+    // .secondArrow {
+    //   position: absolute;
+    //   width: 145px;
+    //   height: 118px;
+    //   background-color: white;
+    //   transform: rotate(0deg);
+    // }
+    // svg {
+    //   width: 100%;
+    //   height: 100%;
+    //   background: linear-gradient(to left, white 50%, black 50%) right;
+    //   background-size: 200%;
+    //   transition: 0.5s ease-out;
+    //   transform: rotate(180deg);
+    //   fill: black;
+    // }
   }
   .row {
     width: 100%;
@@ -859,6 +861,56 @@ svg .arrowRight {
 
 /*MEDIA QUERIES*/
 
+@media (max-width: 1785px) {
+  .formBox {
+    bottom: -35px;
+    img {
+      width: 90%;
+      height: 90%;
+    }
+  }
+}
+
+@media (max-width: 1635px) {
+  .services .elem-one,
+  .services .elem-two,
+  .services .elem-three,
+  .services .elem-four {
+    min-width: 633px;
+    max-width: 0;
+    width: 0;
+    figure {
+      min-width: 340px;
+      width: 633px;
+    }
+  }
+}
+
+@media (max-width: 1610px) {
+  .formBox {
+    width: 365px;
+  }
+  .iconTools .toolBox {
+    align-items: center;
+    .h3 {
+      text-align: center;
+    }
+  }
+  .iconTools .container {
+    justify-content: center;
+  }
+  .iconTools #toolFive,
+  .iconTools #toolSix {
+    margin-right: 0;
+    .h3 {
+      text-align: center;
+    }
+  }
+  .iconTools .container .toolBox .h3 {
+    text-align: center;
+  }
+}
+
 @media (min-width: 1401px) {
   .navAndSlider .navbarBurger {
     display: none;
@@ -897,51 +949,6 @@ svg .arrowRight {
   }
 }
 
-@media (max-width: 1635px) {
-  .services .elem-one,
-  .services .elem-two,
-  .services .elem-three,
-  .services .elem-four {
-    min-width: 633px;
-    max-width: 0;
-    width: 0;
-    figure {
-      min-width: 340px;
-      width: 633px;
-    }
-  }
-}
-
-@media (max-width: 1199px) {
-  .servicesSection .services .elem-two {
-    margin-top: 27px;
-  }
-}
-
-@media (max-width: 1610px) {
-  .formBox {
-    width: 365px;
-  }
-  .iconTools .toolBox {
-    align-items: center;
-    .h3 {
-      text-align: center;
-    }
-  }
-  .iconTools .container {
-    justify-content: center;
-  }
-  .iconTools #toolFive,
-  .iconTools #toolSix {
-    margin-right: 0;
-    .h3 {
-      text-align: center;
-    }
-  }
-  .iconTools .container .toolBox .h3 {
-    text-align: center;
-  }
-}
 @media (max-width: 1373px) {
   .navFooter {
     margin-right: 0;
@@ -962,6 +969,42 @@ svg .arrowRight {
     width: 144px;
   }
 }
+
+@media (max-width: 1200px) {
+  .services .services .elem-two {
+    margin-top: 27px;
+  }
+  .gallery .container {
+    .h1 {
+      font-size: 50px;
+    }
+    .h1::after {
+      border-top: 0.8rem solid black;
+      width: 16rem;
+      transform: translateY(1.5rem);
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .servicesSection .services .elem-two {
+    margin-top: 27px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .navContainer {
+    left: 104px;
+  }
+  .navbar-brand {
+    margin-right: 46px;
+  }
+  .contentImage {
+    bottom: 90px;
+    left: 100px;
+  }
+}
+
 @media (max-width: 923px) {
   .newsBox .container :nth-child(2n) {
     margin-top: 30px;
@@ -992,19 +1035,6 @@ svg .arrowRight {
   }
 }
 
-@media (max-width: 1025px) {
-  .navContainer {
-    left: 104px;
-  }
-  .navbar-brand {
-    margin-right: 46px;
-  }
-  .contentImage {
-    bottom: 90px;
-    left: 100px;
-  }
-}
-
 @media (max-width: 778px) {
   .navFooter ul {
     width: 244px;
@@ -1029,22 +1059,6 @@ svg .arrowRight {
   }
   .navContainer .navbar-brand {
     margin-right: 59px;
-  }
-}
-
-@media (max-width: 447px) {
-  .navFooter {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 1785px) {
-  .formBox {
-    bottom: -35px;
-    img {
-      width: 90%;
-      height: 90%;
-    }
   }
 }
 
@@ -1075,6 +1089,12 @@ svg .arrowRight {
   .services .elem-three figure,
   .services .elem-four figure {
     width: 100%;
+  }
+}
+
+@media (max-width: 447px) {
+  .navFooter {
+    margin-top: 20px;
   }
 }
 
@@ -1150,6 +1170,16 @@ svg .arrowRight {
   .contentImage .paragraph {
     height: 50px;
   }
+
+  .gallery .container {
+    .h1 {
+      font-size: 35px;
+    }
+    .h1::after {
+      transform: translateY(-1.9rem);
+      width: 15rem;
+    }
+  }
 }
 
 @media (max-width: 800px) {
@@ -1174,6 +1204,9 @@ svg .arrowRight {
   .navContainer .btn {
     margin-top: 90px;
   }
+  .gallery .container {
+    right: 60px;
+  }
 }
 
 @media (max-width: 461px) {
@@ -1191,6 +1224,15 @@ svg .arrowRight {
   }
   .navAndSlider .contentImage .paragraph {
     font-size: 14px;
+  }
+  .gallery .container {
+    .h1 {
+      font-size: 35px;
+      .h1::after {
+        transform: translateY(-1.9rem);
+        width: 15rem;
+      }
+    }
   }
 }
 
