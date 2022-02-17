@@ -1,7 +1,6 @@
 {
-  "name": "task-runner",
+  "name": "adream-task",
   "version": "1.0.0",
-  "description": "",
   "main": "index.html",
   "scripts": {
     "init-project": "npm install && npm-run-all init:*",
@@ -34,5 +33,14 @@
   },
   "dependencies": {
     "node-sass": "^7.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcinSkowronek27/ADream_task.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarcinSkowronek27/ADream_task/issues"
+  },
+  "homepage": "https://github.com/MarcinSkowronek27/ADream_task#readme",
+  "description": ""
 }
