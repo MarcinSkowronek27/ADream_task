@@ -659,7 +659,32 @@ svg .arrowRight {
 
 /*Gallery section*/
 .gallery {
+  position: relative;
   margin-top: 130px;
+  .container {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 209px;
+    justify-content: flex-end;
+    .h1 {
+      font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-65) /
+        var(--unnamed-line-spacing-75) var(--unnamed-font-family-poppins);
+      letter-spacing: var(--unnamed-character-spacing-0);
+      color: var(--unnamed-color-000000);
+      text-align: right;
+      opacity: 1;
+      width: 358px;
+    }
+    .h1::after {
+      display: inline-block;
+      content: "";
+      border-top: 1.3rem solid black;
+      width: 24rem;
+      margin: 0 -0.19rem;
+      transform: translateY(7.5rem);
+    }
+  }
   .column {
     float: left;
     width: 33.33%;
