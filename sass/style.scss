@@ -59,6 +59,24 @@
     width: 65%;
     // border: solid pink;
     justify-content: space-between;
+    .nav-item a{
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 60%;
+        top: 100%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 250ms ease-in-out;
+      }
+
+      &:hover::after {
+        width: 60%;
+      }
+    }
   }
 }
 
@@ -888,7 +906,7 @@ svg .arrowRight {
 
 /*MEDIA QUERIES*/
 
-@media (min-width: 1400px) {
+@media (min-width: 1401px) {
   .navAndSlider .navbarBurger {
     display: none;
   }
@@ -906,9 +924,12 @@ svg .arrowRight {
       font-size: 36px;
     }
   }
-  .formBox {
-    width: 364px;
+  .navAndSlider .formBox {
+    display: none;
   }
+  // .formBox {
+  //   width: 364px;
+  // }
   .navContainer {
     .navbar {
       width: 100px;
@@ -1008,9 +1029,6 @@ svg .arrowRight {
   .contentImage {
     bottom: 88px;
     margin-right: 100px;
-  }
-  .navAndSlider .formBox {
-    display: none;
   }
   .navContainer .btn {
     display: block;
@@ -1237,7 +1255,8 @@ svg .arrowRight {
 
 @media (max-width: 800px) {
   .navContainer {
-    top: 0px;
+    top: -12px;
+    left: 78px;
     .btn {
       margin-top: 236px;
     }
@@ -1255,5 +1274,32 @@ svg .arrowRight {
   }
   .navContainer .btn {
     margin-top: 90px;
+  }
+}
+
+@media (max-width: 461px) {
+  .navAndSlider .contentImage {
+    bottom: 0px;
+    left: 118px;
+  }
+  .navContainer .btn {
+    width: 50px;
+    font-size: 8px;
+    height: 42px;
+  }
+  .contentImage svg {
+    font-size: 20px;
+  }
+  .navAndSlider .contentImage .paragraph {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contentImage {
+    bottom: -20px;
+  }
+  .navAndSlider .contentImage .paragraph {
+    font-size: 14px;
   }
 }
