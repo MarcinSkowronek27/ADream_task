@@ -180,10 +180,10 @@ svg .arrowRight {
     fill: black;
   }
 }
-.arrowGallery #useArrowTwo,
-.arrowGallery #useArrowThree, 
-.arrowCarousel #useArrowTwo,
-.arrowCarousel #useArrowThree {
+.arrowGallery .useArrowTwo,
+.arrowGallery .useArrowThree,
+.arrowCarousel .useArrowTwo,
+.arrowCarousel .useArrowThree {
   display: none;
 }
 
@@ -641,31 +641,25 @@ svg .arrowRight {
   margin-top: 130px;
   width: 100%;
   .arrowBox {
-      bottom: 0;
-      top: 42%;
-      svg:hover {
-        background-position: left;
+    bottom: 0;
+    top: 42%;
+    svg:hover {
+      background-position: left;
+      fill: white;
+      .a {
         fill: white;
-        .a {
-          fill: white;
-        }
       }
-    // .secondArrow {
-    //   position: absolute;
-    //   width: 145px;
-    //   height: 118px;
-    //   background-color: white;
-    //   transform: rotate(0deg);
-    // }
-    // svg {
-    //   width: 100%;
-    //   height: 100%;
-    //   background: linear-gradient(to left, white 50%, black 50%) right;
-    //   background-size: 200%;
-    //   transition: 0.5s ease-out;
-    //   transform: rotate(180deg);
-    //   fill: black;
-    // }
+    }
+    .secondArrow {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      transform: rotate(0deg);
+    }
+  }
+  .secondBox {
+    right: 0px;
   }
   .row {
     width: 100%;
@@ -673,6 +667,7 @@ svg .arrowRight {
   .container {
     display: flex;
     position: absolute;
+    width: 200px;
     top: 30px;
     right: 209px;
     justify-content: flex-end;
@@ -1031,12 +1026,12 @@ svg .arrowRight {
     height: 85px;
   }
 
-  .arrowCarousel #useArrowOne,
-  .arrowGallery #useArrowOne {
+  .arrowCarousel .useArrowOne,
+  .arrowGallery .useArrowOne {
     display: none;
   }
-  .arrowCarousel #useArrowTwo,
-  .arrowGallery #useArrowTwo {
+  .arrowCarousel .useArrowTwo,
+  .arrowGallery .useArrowTwo {
     display: block;
   }
 }
@@ -1165,12 +1160,12 @@ svg .arrowRight {
     width: 53px;
     height: 55px;
   }
-  .arrowCarousel #useArrowTwo,
-  .arrowGallery #useArrowTwo  {
+  .arrowCarousel .useArrowTwo,
+  .arrowGallery .useArrowTwo {
     display: none;
   }
-  .arrowCarousel #useArrowThree,
-  .arrowGallery #useArrowThree {
+  .arrowCarousel .useArrowThree,
+  .arrowGallery .useArrowThree {
     display: block;
   }
   .contentImage {
