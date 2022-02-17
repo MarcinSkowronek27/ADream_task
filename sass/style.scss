@@ -922,7 +922,7 @@ svg .arrowRight {
   .services .elem-three,
   .services .elem-four {
     // width: 743px;
-    min-width: 500px;
+    min-width: 750px;
     max-width: 0;
     width: 0;
   }
@@ -931,7 +931,7 @@ svg .arrowRight {
   .services .elem-three figure,
   .services .elem-four figure {
     // width: 743px;
-    min-width: 500px;
+    min-width: 750px;
     width: 0;
   }
 }
@@ -1112,6 +1112,22 @@ svg .arrowRight {
       width: 90%;
       height: 90%;
     }
+  }
+}
+@media (max-width: 1521px) {
+  .services .elem-one,
+  .services .elem-two,
+  .services .elem-three,
+  .services .elem-four {
+    // width: 743px;
+    min-width: 750px;
+  }
+  .services .elem-one figure,
+  .services .elem-two figure,
+  .services .elem-three figure,
+  .services .elem-four figure {
+    // width: 743px;
+    min-width: 750px;
   }
 }
 
