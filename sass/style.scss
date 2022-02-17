@@ -180,6 +180,8 @@ svg .arrowRight {
     fill: black;
   }
 }
+.arrowGallery #useArrowTwo,
+.arrowGallery #useArrowThree, 
 .arrowCarousel #useArrowTwo,
 .arrowCarousel #useArrowThree {
   display: none;
@@ -1022,15 +1024,19 @@ svg .arrowRight {
     font-size: 26px;
   }
   .arrowCarousel,
-  .arrowBox .arrowCarousel {
+  .arrowGallery,
+  .arrowBox .arrowCarousel,
+  .arrowBox .arrowGallery {
     width: 93px;
     height: 85px;
   }
 
-  .arrowCarousel #useArrowOne {
+  .arrowCarousel #useArrowOne,
+  .arrowGallery #useArrowOne {
     display: none;
   }
-  .arrowCarousel #useArrowTwo {
+  .arrowCarousel #useArrowTwo,
+  .arrowGallery #useArrowTwo {
     display: block;
   }
 }
@@ -1153,15 +1159,19 @@ svg .arrowRight {
     margin-right: 10px;
   }
   .arrowCarousel,
-  .arrowBox .arrowCarousel {
+  .arrowGallery,
+  .arrowBox .arrowCarousel,
+  .arrowBox .arrowGallery {
     width: 53px;
     height: 55px;
   }
-  .arrowCarousel #useArrowThree {
-    display: block;
-  }
-  .arrowCarousel #useArrowTwo {
+  .arrowCarousel #useArrowTwo,
+  .arrowGallery #useArrowTwo  {
     display: none;
+  }
+  .arrowCarousel #useArrowThree,
+  .arrowGallery #useArrowThree {
+    display: block;
   }
   .contentImage {
     margin-right: 150px;
