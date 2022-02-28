@@ -956,7 +956,6 @@ svg .arrowRight {
   }
   .navContainer .btn {
     display: block;
-    z-index: 500;
     color: var(--unnamed-color-000000);
     background-color: var(--unnamed-color-FFCC48);
     border-color: var(--unnamed-color-FFCC48);
@@ -1147,6 +1146,7 @@ svg .arrowRight {
   }
   .navAndSlider .navContainer .btn {
     margin-top: 76px;
+    z-index: 500;
   }
   .navContainer .navbar {
     margin-right: 30px;
