@@ -43,9 +43,6 @@
   width: 82%;
   justify-content: space-between;
 }
-.navAndSlider .navContainer .btn {
-  z-index: 500;
-}
 
 .navbar {
   width: 1400px;
@@ -959,6 +956,7 @@ svg .arrowRight {
   }
   .navContainer .btn {
     display: block;
+    z-index: 500;
     color: var(--unnamed-color-000000);
     background-color: var(--unnamed-color-FFCC48);
     border-color: var(--unnamed-color-FFCC48);
