@@ -42,6 +42,9 @@
   height: 80px;
   width: 82%;
   justify-content: space-between;
+  .modalButton {
+    z-index: 500;
+  }
 }
 
 .navbar {
@@ -111,7 +114,6 @@
   bottom: 125px;
   width: 449px;
   height: 638px;
-  z-index: 500;
 }
 
 .contentImage {
