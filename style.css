@@ -1055,6 +1055,7 @@ svg .arrowRight {
     right: 0px;
     height: 80%;
     width: 144px;
+    z-index: 500;
   }
 }
 
