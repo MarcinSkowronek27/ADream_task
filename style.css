@@ -1013,6 +1013,9 @@ svg .arrowRight {
 }
 
 @media (max-width: 1400px) {
+  .services .services .elem-two {
+    margin-top: 27px;
+  }
   .contentImage svg {
     font-size: 48px;
   }
