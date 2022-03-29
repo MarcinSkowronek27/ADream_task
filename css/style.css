@@ -1014,7 +1014,7 @@ svg .arrowRight {
 }
 
 @media (max-width: 1400px) {
-  .services .elem-two {
+  .servicesSection .services .elem-two {
     margin-top: 27px;
   }
   .contentImage svg {
@@ -1063,7 +1063,7 @@ svg .arrowRight {
 }
 
 @media (max-width: 1200px) {
-  .services .elem-two {
+  .servicesSection .services .elem-two {
     margin-top: 27px;
   }
   .gallery .container .h1 {
